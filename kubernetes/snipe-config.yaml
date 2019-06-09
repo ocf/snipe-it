@@ -1,0 +1,19 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: snipe-config
+data:
+  MYSQL_DATABASE: ocfsnipeit
+  MYSQL_USER: ocfsnipeit
+  MYSQL_PORT_3306_TCP_ADDR: mysql.ocf.berkeley.edu
+  MYSQL_PORT_3306_TCP_PORT: "3306"
+  MAIL_PORT_587_TCP_ADDR: mail.ocf.berkeley.edu
+  MAIL_PORT_587_TCP_PORT: "587"
+  MAIL_ENV_FROM_ADDR: ocfsnipeit@ocf.berkeley.edu
+  MAIL_ENV_FROM_NAME: "OCF Inventory"
+  MAIL_ENV_ENCRYPTION: tcp
+  APP_ENV: production
+  APP_DEBUG: "false"
+  APP_URL: https://inventory.ocf.berkeley.edu
+  APP_TIMEZONE: US/Pacific
+  APP_LOCALE: en
