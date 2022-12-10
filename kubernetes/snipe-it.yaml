@@ -16,7 +16,7 @@ spec:
     spec:
       containers:
       - name: snipe-it
-        image: "snipe/snipe-it:v6.0.12"
+        image: "snipe/snipe-it:v6.0.14"
         resources:
           limits:
             memory: 1Gi
